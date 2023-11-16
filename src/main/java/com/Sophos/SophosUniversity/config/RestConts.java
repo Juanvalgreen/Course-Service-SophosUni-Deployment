@@ -4,7 +4,7 @@ public interface RestConts {
 
     String BASE_URL_STUDENTS_LOCAL = "http://localhost:9004";
 
-    String BASE_URL_STUDENTS_DEPLOY = "https://teacher-service-sophosuni.onrender.com";
+    String BASE_URL_STUDENTS_DEPLOY = "https://student-servicesophosuni.onrender.com";
 
     String BASE_URL_TEACHERS_LOCAL = "http://localhost:9005";
 

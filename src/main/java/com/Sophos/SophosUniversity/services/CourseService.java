@@ -284,13 +284,13 @@ public class CourseService implements ICourseService{
         if (repository.existsById(id)) {
             try {
 
-                ResponseEntity<Enrollments[]> responseEntity= restTemplate.getForEntity("http://localhost:9000/api/v1/enrollments/"+id+"/courses", Enrollments[].class);
+                ResponseEntity<Enrollments[]> responseEntity= restTemplate.getForEntity(RestConts.BASE_URL_ENROLLMENTS_DEPLOY +  "/api/v1/enrollments/"+id+"/courses", Enrollments[].class);
                 List<Enrollments> enrollments = Arrays.asList(responseEntity.getBody());
 
 
                 for (Enrollments enroll : enrollments) {
 
-                    restTemplate.delete("http://localhost:9000/api/v1/enrollments/"+enroll.getEnrollment_id());
+                    restTemplate.delete(RestConts.BASE_URL_ENROLLMENTS_DEPLOY +  "/api/v1/enrollments/"+enroll.getEnrollment_id());
 
                 }
 

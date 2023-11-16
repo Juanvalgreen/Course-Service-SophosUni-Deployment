@@ -12,5 +12,5 @@ public interface RestConts {
 
     String BASE_URL_ENROLLMENTS_LOCAL = "http://localhost:9000";
 
-    String BASE_URL_ENROLLMENTS_DEPLOY = "?";
+    String BASE_URL_ENROLLMENTS_DEPLOY = "https://enrollment-service-sophosuni.onrender.com";
 }
